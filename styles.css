@@ -1,6 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
+.container{
+  padding:60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  background-color: grey;
+  gap: 60px;
+  
+}
 
 .card, .entrada {
  
@@ -13,17 +22,24 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  
+  border-bottom-right-radius: 25px;
 }
 
 .card{
    display: flex;
+   position: relative;
+ 
+   background-color: bisque;
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.6);
 }
-.container{
-  padding:60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
-  background-color: grey;
-  gap: 60px;
+.deleteB{
+  background-color: rgba(200, 200, 200, 0.6);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  width: 25px;
+  border-bottom-right-radius: 25px;
+
 }
