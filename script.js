@@ -10,7 +10,7 @@ function addBookToLibrary(name, amount) {
   myLibrary.push(newBoowk);
 }
 //-------------------------------------------------
-const bodyElement = document.querySelector("body");
+const bodyElement = document.querySelector(".container");
 const botonElement = document.querySelector("#agregar");
 const inputName = document.querySelector("#nameid");
 const inputNumber = document.querySelector("#numberid");
@@ -20,11 +20,12 @@ botonElement.addEventListener("click",function()
 
 {
 
-  let card = document.createElement("div");
+  let card = document.createElement("div"); 
   card.classList.add("card");
   card.id = crypto.randomUUID();
-  card.innerText = inputName.value;
+  card.innerText = inputName.value + "\n" + inputNumber.value;
   inputName.value = "";
+  inputNumber.value = 0;
 
 
 

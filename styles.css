@@ -1,7 +1,29 @@
-.card {
-  height: 2em;
+
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+
+.card, .entrada {
+ 
+  font-family: "Meow Script";
+  height: 300px;
   width: 200px;
   border: 1px solid black;
+  padding: 20px;
+  font-size: 3em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   
 }
 
+.card{
+   display: flex;
+}
+.container{
+  padding:60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  background-color: grey;
+  gap: 60px;
+}
