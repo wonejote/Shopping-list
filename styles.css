@@ -23,14 +23,15 @@
   justify-content: center;
   align-items: center;
   border-bottom-right-radius: 25px;
+
+   background-color: rgba(255, 228, 196, 1);
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.6);
 }
 
 .card{
    display: flex;
    position: relative;
  
-   background-color: bisque;
-  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.6);
 }
 
 .deleteB{
@@ -42,4 +43,25 @@
   width: 25px;
   border-bottom-right-radius: 25px;
 
+}
+
+.fondo{
+
+  height: 100%;
+  width: 100%;
+  background-color:  rgba(255, 228, 196, 1);
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  gap: 60px;
+  box-sizing: border-box 
+  
+}
+
+.sidebar{
+  background-color: rgba(128, 128, 128, 1);
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1.5em;
 }

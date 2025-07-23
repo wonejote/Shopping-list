@@ -27,6 +27,9 @@ function addDeleteButton(card){
   {
     deleteBook(card);
     bodyElement.removeChild(card);
+    sideElement.innerText = myLibrary.map(el => `${el.name}: ${el.amount}`)
+  .join("\n");
+
 
   });
 }
@@ -39,7 +42,7 @@ const bodyElement = document.querySelector(".container");
 const botonElement = document.querySelector("#agregar");
 const inputName = document.querySelector("#nameid");
 const inputNumber = document.querySelector("#numberid");
-
+const sideElement = document.querySelector(".sidebar");
 
 botonElement.addEventListener("click",function()
 
@@ -50,6 +53,10 @@ botonElement.addEventListener("click",function()
   card.id = crypto.randomUUID();
   card.innerText = inputName.value + "\n" + inputNumber.value;
   addBookToLibrary(inputName.value,inputNumber.value,card);
+
+
+  sideElement.innerText = myLibrary.map(el => `${el.name} : ${el.amount}`)
+  .join("\n");
 
   
   inputName.value = "";
